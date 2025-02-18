@@ -15,11 +15,15 @@
         <li><a href="#armes" onClick="getWeapons()">Armes</a></li>
         <li><a href="#maps">Maps</a></li>
         <li><a href="#agents" onClick="toggleAgentsContainer()">Agents</a></li>
-        <li><a href="#gamemode">Gamemode</a></li>
+        <li><a href="#gamemode" id="#gamemode">Gamemode</a></li>
       </ul>
     </nav>
     <header>
-        <img class="logo-valorant" src="images/VALORANT-18-02-2025.png" alt="Logo VALORANT">
+      <img
+        class="logo-valorant"
+        src="images/VALORANT-18-02-2025.png"
+        alt="Logo VALORANT"
+      />
       <h1>Bienvenue sur l'API VALORANT</h1>
       <p>
         Découvrez toutes les informations sur les armes, les cartes, les agents
@@ -27,7 +31,8 @@
       </p>
     </header>
     <section id="agents">
-        <div id="Container"></div>
+      <div id="Container"></div>
     </section>
+    <script src="gamemode/gamemode.js"></script>
   </body>
 </html>
