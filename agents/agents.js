@@ -31,14 +31,10 @@ async function fetchAgents() {
 
 function toggleAgentsTable() {
   const table = document.getElementById("agentsTable");
-  table.style.display = table.style.display === "none" ? "table" : "none";
   fetchAgents();
 }
 
 function toggleAgentsContainer() {
   const container = document.getElementById("Container");
-  const isHidden = container.style.display === "none";
-
-  container.style.display = isHidden ? "flex" : "none";
   fetchAgents();
 }
