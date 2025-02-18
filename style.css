@@ -78,6 +78,23 @@ header * {
     z-index: 2;
 }
 
-
-
-/* CCS MAPS */
+/* DEBUT CCS MAPS */
+.linkMaps{
+    text-decoration: none;
+    color: black;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.800);
+}
+.linkMaps h3{
+    font-weight: 600;
+    color: black;
+}
+/* FIN CCS MAPS */
