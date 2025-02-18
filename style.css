@@ -107,4 +107,9 @@ header * {
        margin-bottom: 10px;
    }
 
-       
+   .logo-valorant {
+    width: 100px;
+    margin: 0 auto;
+    display: block; 
+    margin-bottom: 20px;
+}
