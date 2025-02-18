@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("conteneur-modes");
+  const container = document.getElementById("Container");
   const loadButton = document.getElementById("#gamemode");
 
   const loadGameModes = async () => {
-    container.style.display = "flex";
-
     container.innerHTML = "";
 
     try {
