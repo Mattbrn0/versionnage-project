@@ -4,6 +4,7 @@
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="stylesheet" href="style.css">
+       <script type="text/javascript" src="agents/agents.js"></script>
        <title>VALORANT API</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
            <ul>
                <li><a href="#armes">Armes</a></li>
                <li><a href="#maps">Maps</a></li>
-               <li><a href="#" onclick="toggleAgentsTable()">Agents</a></li>
+               <li><a href="#agents" onClick="toggleAgentsTable()">Agents</a></li>
                <li><a href="#gamemode">Gamemode</a></li>
            </ul>
        </nav>
@@ -19,25 +20,18 @@
            <h1>Bienvenue sur l'API VALORANT</h1>
            <p>Découvrez toutes les informations sur les armes, les cartes, les agents et les modes de jeu.</p>
        </header>
-
-       <table id="agentsTable" style="display: none;">
-              <thead>
-                  <tr>
-                      <th>Image</th>
-                      <th>Nom</th>
-                      <th>Rôle</th>
-                      <th>Description</th>
-                  </tr>
-              </thead>
-              <tbody></tbody>
-          </table>
-
-      <script>
-          function toggleAgentsTable() {
-              const table = document.getElementById("agentsTable");
-              table.style.display = table.style.display === "none" ? "table" : "none";
-              fetchAgents() 
-          }
-      </script>
+       <section id="agents">
+              <table id="agentsTable" style="display: none;">
+                     <thead>
+                         <tr>
+                             <th>Image</th>
+                             <th>Nom</th>
+                             <th>Rôle</th>
+                             <th>Description</th>
+                         </tr>
+                     </thead>
+                     <tbody></tbody>
+                 </table>
+       </section>
 </body>
 </html>
