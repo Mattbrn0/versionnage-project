@@ -1,0 +1,80 @@
+#Container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 50px 0;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+  border: 1px solid #ff4655;
+  transition: transform 0.5s;
+}
+.card:hover {
+  transform: scale(1.1);
+  border-color: black;
+  cursor: pointer;
+}
+.card img {
+  width: 150px;
+  border-radius: 5px;
+}
+.card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+@media (min-width: 400px) {
+  #Container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 600px) {
+  #Container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1024px) {
+  #Container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 50px 0;
+  }
+}
+@media (min-width: 1400px) {
+  #Container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 50px 0;
+  }
+}
