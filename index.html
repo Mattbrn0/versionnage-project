@@ -12,7 +12,7 @@
            <ul>
                <li><a href="#armes">Armes</a></li>
                <li><a href="#maps">Maps</a></li>
-               <li><a href="#agents" onClick="toggleAgentsTable()">Agents</a></li>
+               <li><a href="#agents" onClick="toggleAgentsContainer()">Agents</a></li>
                <li><a href="#gamemode">Gamemode</a></li>
            </ul>
        </nav>
@@ -21,17 +21,8 @@
            <p>Découvrez toutes les informations sur les armes, les cartes, les agents et les modes de jeu.</p>
        </header>
        <section id="agents">
-              <table id="agentsTable" style="display: none;">
-                     <thead>
-                         <tr>
-                             <th>Image</th>
-                             <th>Nom</th>
-                             <th>Rôle</th>
-                             <th>Description</th>
-                         </tr>
-                     </thead>
-                     <tbody></tbody>
-                 </table>
-       </section>
+              <div id="agentsContainer" style="display: none;"></div>
+          </section>
+          
 </body>
 </html>

@@ -4,23 +4,27 @@ async function fetchAgents() {
         const data = await response.json();
         const agents = data.data;
 
-        const tableBody = document.querySelector("#agentsTable tbody");
-        tableBody.innerHTML = "";
+        const container = document.querySelector("#agentsContainer");
+        container.innerHTML = "";
 
         agents.forEach(agent => {
-            const row = document.createElement("tr");
-            row.innerHTML = `
-                <td><img src="${agent.displayIcon}" alt="${agent.displayName}" width="50"></td>
-                <td>${agent.displayName}</td>
-                <td>${agent.role ? agent.role.displayName : 'N/A'}</td>
-                <td>${agent.description}</td>
+            const card = document.createElement("div");
+            card.classList.add("agent-card");
+
+            card.innerHTML = `
+                <img src="${agent.displayIcon}" alt="${agent.displayName}">
+                <h3>${agent.displayName}</h3>
+                <p><strong>Rôle:</strong> ${agent.role ? agent.role.displayName : 'N/A'}</p>
+                <p>${agent.description}</p>
             `;
-            tableBody.appendChild(row);
+
+            container.appendChild(card);
         });
     } catch (error) {
         console.error("Erreur lors de la récupération des agents :", error);
     }
 }
+
 
 function toggleAgentsTable() {
     const table = document.getElementById("agentsTable");
@@ -29,3 +33,10 @@ function toggleAgentsTable() {
 }
 
 
+function toggleAgentsContainer() {
+    const container = document.getElementById("agentsContainer");
+    const isHidden = container.style.display === "none";
+
+    container.style.display = isHidden ? "flex" : "none";
+    fetchAgents();
+}

@@ -78,25 +78,33 @@ header * {
     z-index: 2;
 }
 
-table {
-       width: 100%;
-       border-collapse: collapse;
-       margin-top: 20px;
+#agentsContainer {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       justify-content: center;
+       padding: 20px;
+   }
+   
+   .agent-card {
        background: #1a1a1a;
        color: white;
+       border: 2px solid #ff4655;
+       padding: 20px;
+       border-radius: 10px;
+       width: 250px;
+       text-align: center;
+       transition: transform 0.3s ease;
    }
    
-   th, td {
-       padding: 10px;
-       border: 1px solid #ff4655;
-       text-align: left;
+   .agent-card:hover {
+       transform: scale(1.05);
    }
    
-   th {
-       background: #ff4655;
+   .agent-card img {
+       width: 100px;
+       border-radius: 50%;
+       margin-bottom: 10px;
    }
-   
-   img {
-       border-radius: 5px;
-   }
-   
+
+       
