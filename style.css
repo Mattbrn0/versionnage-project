@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Rajdhani", sans-serif;
   background-color: #0f1923;
@@ -99,6 +103,9 @@ header * {
   align-items: center;
   padding: 10px;
   margin: 20px;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .card img {
@@ -106,4 +113,14 @@ header * {
 }
 .card h2 {
   font-family: Tungsten-Bold, "Riot Sans", sans-serif;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
