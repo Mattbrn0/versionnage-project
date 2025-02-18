@@ -4,7 +4,7 @@ async function fetchAgents() {
         const data = await response.json();
         const agents = data.data;
 
-        const container = document.querySelector("#agentsContainer");
+        const container = document.querySelector("#Container");
         container.innerHTML = "";
 
         agents.forEach(agent => {
@@ -34,7 +34,7 @@ function toggleAgentsTable() {
 
 
 function toggleAgentsContainer() {
-    const container = document.getElementById("agentsContainer");
+    const container = document.getElementById("Container");
     const isHidden = container.style.display === "none";
 
     container.style.display = isHidden ? "flex" : "none";
