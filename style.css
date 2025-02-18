@@ -77,3 +77,26 @@ header * {
     position: relative;
     z-index: 2;
 }
+
+table {
+       width: 100%;
+       border-collapse: collapse;
+       margin-top: 20px;
+       background: #1a1a1a;
+       color: white;
+   }
+   
+   th, td {
+       padding: 10px;
+       border: 1px solid #ff4655;
+       text-align: left;
+   }
+   
+   th {
+       background: #ff4655;
+   }
+   
+   img {
+       border-radius: 5px;
+   }
+   
