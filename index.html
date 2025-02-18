@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="weapon/weapon.css" />
-
+    <script type="text/javascript" src="agents/agents.js"></script>
     <script type="text/javascript" src="weapon/weapon.js"></script>
     <title>VALORANT API</title>
   </head>
@@ -14,17 +14,20 @@
       <ul>
         <li><a href="#armes" onClick="getWeapons()">Armes</a></li>
         <li><a href="#maps">Maps</a></li>
-        <li><a href="#agents">Agents</a></li>
+        <li><a href="#agents" onClick="toggleAgentsContainer()">Agents</a></li>
         <li><a href="#gamemode">Gamemode</a></li>
       </ul>
     </nav>
     <header>
+        <img class="logo-valorant" src="images/VALORANT-18-02-2025.png" alt="Logo VALORANT">
       <h1>Bienvenue sur l'API VALORANT</h1>
       <p>
         Découvrez toutes les informations sur les armes, les cartes, les agents
         et les modes de jeu.
       </p>
     </header>
-    <div id="Container"></div>
+    <section id="agents">
+        <div id="Container" style="display: none;"></div>
+    </section>
   </body>
 </html>

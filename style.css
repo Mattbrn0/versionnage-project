@@ -77,3 +77,39 @@ header * {
     position: relative;
     z-index: 2;
 }
+
+#Container {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       justify-content: center;
+       padding: 20px;
+   }
+   
+   .agent-card {
+       background: #1a1a1a;
+       color: white;
+       border: 2px solid #ff4655;
+       padding: 20px;
+       border-radius: 10px;
+       width: 250px;
+       text-align: center;
+       transition: transform 0.3s ease;
+   }
+   
+   .agent-card:hover {
+       transform: scale(1.05);
+   }
+   
+   .agent-card img {
+       width: 100px;
+       border-radius: 50%;
+       margin-bottom: 10px;
+   }
+
+   .logo-valorant {
+    width: 100px;
+    margin: 0 auto;
+    display: block; 
+    margin-bottom: 20px;
+}
