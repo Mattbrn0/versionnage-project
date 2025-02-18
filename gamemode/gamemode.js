@@ -1,13 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("conteneur-modes");
+  const loadButton = document.getElementById("#gamemode");
 
   const loadGameModes = async () => {
-    if (window.location.hash !== "#gamemode") {
-      container.style.display = "none";
-      return;
-    }
-
     container.style.display = "flex";
+
     container.innerHTML = "";
 
     try {
@@ -36,7 +33,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  loadGameModes();
-
-  window.addEventListener("hashchange", loadGameModes);
+  loadButton.addEventListener("click", loadGameModes);
 });
